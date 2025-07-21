@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #1e1e1e;   
+}
+
+/* Sticky header only */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1e1e1e;
+  padding: 16px;
+}
+
+/* Scrollable content under sticky header */
+.scrollable-content {
+  padding: 20px;
+  overflow-y: auto;
+  height: calc(100vh - 64px); /* adjust based on header height */
+}
+
+/* Layout */
+.builder-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Left Form */
+.form-section {
+  flex: 1;
+  max-width: 50%;
+}
+
+/* Right JSON */
+.json-section {
+  flex: 1;
+  background: #2d2d2d;
+  color: white;
+  padding: 16px;
+  border-radius: 6px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+.json-section pre {
+  white-space: pre-wrap;
+  font-family: 'Courier New', monospace;
+  color: #e6e6e6;
+}

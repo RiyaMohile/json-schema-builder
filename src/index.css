@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #1e1e1e;
+  height: 100vh;
+  overflow: hidden; /* Prevent page scroll */
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1e1e1e;
+  padding: 16px;
+  height: 64px;
+}
+
+.main-container {
+  display: flex;
+  height: calc(100vh - 64px); /* full height minus header */
+  overflow: hidden;
+}
+
+.form-section {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background: white;
+}
+
+.json-section-sticky {
+  width: 50%;
+  max-width: 700px;
+  background: #2d2d2d;
+  color: white;
+  padding: 16px;
+  overflow-y: auto;
+  font-family: 'Courier New', monospace;
+  white-space: pre-wrap;
+  border-left: 2px solid #444;
+  height: calc(100vh - 64px); /* same as container */
+}
